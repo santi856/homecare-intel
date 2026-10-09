@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://santi856.github.io/homecare-intel/sitemap.xml
