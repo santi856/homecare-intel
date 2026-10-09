@@ -350,6 +350,11 @@
     .final p { color: var(--muted); font-size: 18px; }
     .final .cta { margin-top: 18px; }
     .final-note { display: block; margin-top: 15px; color: var(--faint); font: 400 12px/1.5 "IBM Plex Mono", monospace; }
+    .metro-nav { padding: 20px 0; border-top: 1px solid var(--line); font: 500 12px/1.6 "IBM Plex Mono", monospace; color: var(--faint); }
+    .metro-nav .wrap { width: min(1160px, calc(100% - 48px)); display: flex; flex-wrap: wrap; gap: 6px 18px; align-items: baseline; }
+    .metro-nav a { color: var(--muted); text-decoration: none; }
+    .metro-nav a:hover { color: var(--accent); }
+    .metro-nav-label { text-transform: uppercase; letter-spacing: .08em; }
     footer { padding: 24px 0 36px; color: var(--faint); font: 400 11px/1.5 "IBM Plex Mono", monospace; border-top: 1px solid var(--line); }
     footer .wrap { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px 24px; }
 
@@ -758,6 +763,17 @@
     </section>
   </main>
 
+  <nav class="metro-nav">
+    <div class="wrap">
+      <span class="metro-nav-label">Browse by metro:</span>
+      <a href="jacksonville.html">Jacksonville</a>
+      <a href="miami.html">Miami</a>
+      <a href="orlando.html">Orlando</a>
+      <a href="tampa.html">Tampa</a>
+      <a href="st-petersburg.html">St. Petersburg</a>
+      <a href="brief.html">Statewide data brief</a>
+    </div>
+  </nav>
   <footer>
     <div class="wrap"><span>HomeCare Intel</span><span>The home care agency database for marketers — Florida live now</span></div>
   </footer>
