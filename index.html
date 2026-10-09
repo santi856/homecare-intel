@@ -4,12 +4,12 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <meta name="color-scheme" content="light dark" />
-  <meta name="description" content="HomeCare Intel is the Florida home care agency database for marketing agencies: 100+ licensed agencies with owner names, direct phones, license numbers, Google ratings, Instagram and online-booking signals, and a 0-100 priority score. Weekly Hot 10 and monthly refresh included. $199/month, cancel anytime." />
+  <meta name="description" content="HomeCare Intel is the Florida home care agency database for marketing agencies: 100+ licensed agencies with owner names, direct phones, and license numbers where verified, plus Google ratings, Instagram and online-booking signals, and a 0-100 priority score. Weekly Hot 10 and monthly refresh included. $199/month, cancel anytime." />
   <link rel="canonical" href="https://santi856.github.io/homecare-intel/" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="HomeCare Intel" />
   <meta property="og:title" content="Home Care Agency Database (Florida) — HomeCare Intel | $199/mo" />
-  <meta property="og:description" content="100+ licensed Florida home care agencies with owner names, phones, license numbers, Google ratings, and buying signals — priority-scored, refreshed monthly, weekly Hot 10 included. Built for marketing agencies selling into home care." />
+  <meta property="og:description" content="100+ licensed Florida home care agencies with owner names, direct phones, and license numbers where verified, plus Google ratings and buying signals — priority-scored, refreshed monthly, weekly Hot 10 included. Built for marketing agencies selling into home care." />
   <meta property="og:url" content="https://santi856.github.io/homecare-intel/" />
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="Home Care Agency Database (Florida) — HomeCare Intel | $199/mo" />
@@ -45,9 +45,9 @@
       { "@type": "Question", "name": "How is this different from Apollo or ZoomInfo?", "acceptedAnswer": { "@type": "Answer", "text": "Broad B2B platforms are built to cover every industry. HomeCare Intel is built around one vertical and includes license context plus senior-care-specific prospecting signals — such as visible Instagram activity and online-booking gaps — that broad databases typically do not carry." } },
       { "@type": "Question", "name": "What format do I receive?", "acceptedAnswer": { "@type": "Answer", "text": "A clean CSV that can be opened in Excel or Google Sheets and imported into most CRM and outreach platforms." } },
       { "@type": "Question", "name": "How often do I receive updates?", "acceptedAnswer": { "@type": "Answer", "text": "The full Florida database is delivered the day you subscribe. After that you receive the Hot 10 brief every Monday and a fully refreshed, re-verified master CSV on the 1st of each month." } },
-      { "@type": "Question", "name": "How does priority scoring work?", "acceptedAnswer": { "@type": "Answer", "text": "Each account is scored from 0-100 across four components: fresh market events (up to 35), digital conversion gaps (up to 25), reputation opportunity (up to 20), and contactability plus fit (up to 20). The contributing signals and a plain-English rationale appear beside every score, so your team can audit the ranking instead of trusting a black box." } },
+      { "@type": "Question", "name": "How does priority scoring work?", "acceptedAnswer": { "@type": "Answer", "text": "Every agency starts at 0 and earns points for real, checkable signals: a license issued in the last 90 days (+30), no online booking (+15), a dead or missing Instagram (+15), a rating under 4.3 (+15), under 20 Google reviews (+10), no working website (+15), a new location (+10), already running ads (+10), and an identified owner (+5). Scores land in tiers: 75+ HOT, 50-74 WARM, 25-49 NURTURE, under 25 COLD. No signal, no points — the reason sits next to every score." } },
       { "@type": "Question", "name": "What counts as a trigger?", "acceptedAnswer": { "@type": "Answer", "text": "Triggers include a newly issued license, a meaningful Google rating change, social activity going quiet, or a visible conversion gap such as no online booking. Each Hot 10 entry includes the change, when it was detected, and a suggested outreach angle." } },
-      { "@type": "Question", "name": "Which states are covered?", "acceptedAnswer": { "@type": "Answer", "text": "Florida is live now with 100+ verified records. Texas, California, and New York are on the roadmap and launch after Florida validates with paying subscribers — no state is announced before its data is verified. Every new state is included in your subscription at no extra cost, and founding members vote on which state comes next." } },
+      { "@type": "Question", "name": "Which states are covered?", "acceptedAnswer": { "@type": "Answer", "text": "Florida is live now with 102 verified records. Texas launches October 14 — then a new state every week, with California and New York next in the rollout. Every new state is included in your subscription at no extra cost." } },
       { "@type": "Question", "name": "Can I cancel?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. The subscription is $199 per month and you can cancel anytime. Founding members keep the $199 monthly rate for life while their subscription remains active." } }
     ]
   }
@@ -232,7 +232,7 @@
     .mini-table { padding: 6px 16px 16px; }
     .mini-row {
       display: grid;
-      grid-template-columns: 1.2fr .55fr .65fr;
+      grid-template-columns: 1.05fr .62fr .3fr 1.35fr;
       gap: 10px;
       align-items: center;
       padding: 12px 3px;
@@ -242,6 +242,7 @@
     .mini-row:last-child { border-bottom: 0; }
     .mini-row.header { color: var(--faint); text-transform: uppercase; letter-spacing: .05em; }
     .tag { justify-self: start; color: var(--accent); background: var(--accent-soft); padding: 4px 7px; border-radius: 3px; }
+    .mini-row .why { color: var(--muted); }
 
     section { padding: 104px 0; border-bottom: 1px solid var(--line); }
     .section-head { display: grid; grid-template-columns: .72fr 1.28fr; gap: 56px; margin-bottom: 55px; align-items: start; }
@@ -411,8 +412,8 @@
       .hero-action { align-items: stretch; }
       .hero-action .cta { width: 100%; }
       .price-note { text-align: center; width: 100%; }
-      .mini-row { grid-template-columns: 1.1fr .55fr; }
-      .mini-row > :nth-child(3) { display: none; }
+      .mini-row { grid-template-columns: 1.1fr .4fr; }
+      .mini-row > :nth-child(2), .mini-row > :nth-child(4) { display: none; }
       .record-callout { padding: 26px; }
       .sample-table tr { grid-template-columns: 1fr; }
       .sample-table td:first-child { grid-column: auto; }
@@ -432,7 +433,7 @@
         <div class="hero-copy">
           <div class="eyebrow">Home care agency database · Florida live</div>
           <h1>Every licensed Florida home care agency. Scored by who's ready to buy.</h1>
-          <p>HomeCare Intel is the prospecting database for marketing agencies selling into home care: owner names, direct phones, license numbers, Google ratings, and buying signals for 100+ verified Florida agencies — refreshed monthly, with a weekly Hot 10 of the best-timing accounts. New states follow as each market validates.</p>
+          <p>HomeCare Intel is the prospecting database for marketing agencies selling into home care: owner names, direct phones, and license numbers where verified, plus Google ratings and buying signals for 100+ verified Florida agencies — refreshed monthly, with a weekly Hot 10 of the best-timing accounts. Florida live now. Texas launches October 14 — then a new state every week.</p>
           <div class="hero-action">
             <!-- STRIPE_LINK_MONTHLY -->
             <a class="cta" href="https://buy.stripe.com/dRm4gA7548Xi03Te319AA00">Subscribe — $199/mo</a>
@@ -452,11 +453,12 @@
             <div class="stat"><span class="stat-value">Weekly</span><span class="stat-label">Hot 10 trigger brief</span></div>
             <div class="stat"><span class="stat-value">Monthly</span><span class="stat-label">full database refresh</span></div>
           </div>
-          <div class="mini-table" aria-hidden="true">
-            <div class="mini-row header"><span>Agency</span><span>Score</span><span>Why now</span></div>
-            <div class="mini-row"><span>Sunshine Senior…</span><span>91</span><span class="tag">New license</span></div>
-            <div class="mini-row"><span>Coastal Home…</span><span>84</span><span class="tag">Review drop</span></div>
-            <div class="mini-row"><span>Evergreen Care…</span><span>78</span><span class="tag">Social gap</span></div>
+          <div class="mini-table">
+            <div class="mini-row header"><span>Agency</span><span>City</span><span>Score</span><span>Why now</span></div>
+            <div class="mini-row"><span>Home Instead</span><span>Miami</span><span>40</span><span class="why">4.1★ across just 19 reviews · no Instagram presence</span></div>
+            <div class="mini-row"><span>Nurse Pop Ins &amp; Senior Concierge</span><span>Altamonte Springs</span><span>35</span><span class="why">No online booking · no Instagram presence</span></div>
+            <div class="mini-row"><span>All At Home Healthcare</span><span>Jacksonville</span><span>35</span><span class="why">4.2★ (22 reviews) · no Instagram presence</span></div>
+            <div class="mini-row"><span>Sunshine Home Care Services</span><span>Boca Raton</span><span>30</span><span class="why">Only 2 Google reviews · no Instagram presence</span></div>
           </div>
         </aside>
       </div>
@@ -504,7 +506,7 @@
           <aside class="record-callout">
             <strong>100+</strong>
             <span>verified Florida records live now — full database on signup, Hot 10 every week, refreshed monthly.</span>
-            <p>Delivered as a clean CSV that drops into Excel, Sheets, or your CRM. Every new state is included at no extra cost when it launches, and founding members vote on which state comes next.</p>
+            <p>Delivered as a clean CSV that drops into Excel, Sheets, or your CRM. Every new state is included at no extra cost the week it launches — Texas lands October 14, then a new state every week.</p>
           </aside>
           <div class="field-list" aria-label="Database fields">
             <div class="field-row"><span class="field-index">01</span><span class="field-name">Agency name</span><span class="field-type">Identity</span></div>
@@ -530,29 +532,29 @@
         <div class="section-head">
           <div class="section-label">Coverage</div>
           <div>
-            <h2>Florida is live. More states as they validate.</h2>
+            <h2>Florida is live. Texas launches October 14 — then a new state every week.</h2>
             <p class="lead">HomeCare Intel expands state by state, with one clear standard: verified coverage before a market is marked live — and no market announced before its data is real.</p>
           </div>
         </div>
         <div class="coverage-grid" aria-label="State coverage roadmap">
           <article class="coverage-card live">
             <span class="coverage-status">Live now</span>
-            <div><h3>Florida</h3><p>100+ verified records and growing with each refresh.</p></div>
+            <div><h3>Florida</h3><p>102 verified records and growing with each refresh.</p></div>
           </article>
           <article class="coverage-card">
-            <span class="coverage-status">On the roadmap</span>
-            <div><h3>Texas</h3><p>Launches after Florida validates. Members vote on priority.</p></div>
+            <span class="coverage-status">Launches Oct 14</span>
+            <div><h3>Texas</h3><p>First state in the weekly expansion — verified before it goes live.</p></div>
           </article>
           <article class="coverage-card">
-            <span class="coverage-status">On the roadmap</span>
-            <div><h3>California</h3><p>Launches after Florida validates. Members vote on priority.</p></div>
+            <span class="coverage-status">Weekly rollout</span>
+            <div><h3>California</h3><p>Next in line — a new state launches every week.</p></div>
           </article>
           <article class="coverage-card">
-            <span class="coverage-status">On the roadmap</span>
-            <div><h3>New York</h3><p>Launches after Florida validates. Members vote on priority.</p></div>
+            <span class="coverage-status">Weekly rollout</span>
+            <div><h3>New York</h3><p>Third in the rollout — a new state launches every week.</p></div>
           </article>
         </div>
-        <p class="coverage-note">New states launch as each market is validated — never before. Subscribers receive every new state at no extra cost, and founding members vote on which market comes next.</p>
+        <p class="coverage-note">Florida live now. Texas launches October 14 — then a new state every week. Subscribers receive every new state at no extra cost the week it launches.</p>
       </div>
     </section>
 
@@ -566,31 +568,32 @@
           </div>
         </div>
         <div class="trigger-layout">
-          <div class="alert-feed" aria-label="Example weekly trigger alerts">
+          <div class="alert-feed" aria-label="Top-scored accounts in the live Florida database">
             <div class="alert-feed-head"><span>Weekly Hot 10</span><strong>Every Monday</strong></div>
             <article class="alert-row">
-              <span class="score-badge">91</span>
-              <div class="alert-copy"><strong>New license detected</strong><p>New operator + no visible website + no booking path.</p></div>
-              <span class="alert-type">Call first</span>
+              <span class="score-badge">40</span>
+              <div class="alert-copy"><strong>Home Instead — Miami</strong><p>4.1★ on just 19 Google reviews · no Instagram presence</p></div>
+              <span class="alert-type">Visibility gap</span>
             </article>
             <article class="alert-row">
-              <span class="score-badge">84</span>
-              <div class="alert-copy"><strong>Reputation slipped</strong><p>Rating moved down while recent review volume increased.</p></div>
-              <span class="alert-type">Review gap</span>
+              <span class="score-badge">35</span>
+              <div class="alert-copy"><strong>Nurse Pop Ins &amp; Senior Concierge — Altamonte Springs</strong><p>No online booking · no Instagram presence</p></div>
+              <span class="alert-type">Conversion gap</span>
             </article>
             <article class="alert-row">
-              <span class="score-badge">78</span>
-              <div class="alert-copy"><strong>Social activity went quiet</strong><p>No recent Instagram activity and no online consultation path.</p></div>
-              <span class="alert-type">Digital gap</span>
+              <span class="score-badge">35</span>
+              <div class="alert-copy"><strong>All At Home Healthcare — Jacksonville</strong><p>4.2★ across 22 reviews · no Instagram presence</p></div>
+              <span class="alert-type">Social gap</span>
             </article>
           </div>
           <aside class="score-card">
             <h3>A score you can defend</h3>
             <p>Priority rises when timing and visible need overlap. The rationale stays attached so reps never have to guess what the number means.</p>
-            <div class="score-rule"><span>Fresh market event</span><strong>up to 35</strong></div>
-            <div class="score-rule"><span>Digital conversion gap</span><strong>up to 25</strong></div>
-            <div class="score-rule"><span>Reputation opportunity</span><strong>up to 20</strong></div>
-            <div class="score-rule"><span>Contactability + fit</span><strong>up to 20</strong></div>
+            <div class="score-rule"><span>New license issued (last 90 days)</span><strong>+30</strong></div>
+            <div class="score-rule"><span>No online booking</span><strong>+15</strong></div>
+            <div class="score-rule"><span>Instagram dead or missing</span><strong>+15</strong></div>
+            <div class="score-rule"><span>No website, or a broken one</span><strong>+15</strong></div>
+            <div class="score-rule"><span>Owner / decision-maker identified</span><strong>+5</strong></div>
             <p class="score-note">No black box: each score includes the contributing signals, last-checked date, and recommended outreach angle.</p>
           </aside>
         </div>
@@ -603,50 +606,50 @@
           <div class="section-label">Sample rows</div>
           <div>
             <h2>See the shape of the dataset.</h2>
-            <p class="lead">A practical preview of the fields your team can sort, score, and route into campaigns. Names and contact details below are illustrative and redacted.</p>
+            <p class="lead">A practical preview of the fields your team can sort, score, and route into campaigns. These are real records from the live Florida file — ratings, review counts, and signals exactly as verified. Contact details live in the subscriber database.</p>
           </div>
         </div>
         <div class="sample-wrap">
-          <div class="sample-top"><span>Sample preview / redacted</span><span class="dot-set" aria-hidden="true"><i></i><i></i><i></i></span></div>
+          <div class="sample-top"><span>Sample preview / live records</span><span class="dot-set" aria-hidden="true"><i></i><i></i><i></i></span></div>
           <table class="sample-table">
             <thead>
               <tr><th>Agency</th><th>Market</th><th>Google</th><th>Instagram</th><th>Booking signal</th></tr>
             </thead>
             <tbody>
               <tr>
-                <td data-label="Agency">Sunshine Senior Care</td>
-                <td data-label="Market">Tampa</td>
-                <td data-label="Google"><span class="rating">★ 4.8 (212)</span></td>
-                <td data-label="Instagram">@sunshine<span class="redacted">•••</span></td>
-                <td data-label="Booking signal"><span class="signal-no">No online booking</span></td>
-              </tr>
-              <tr>
-                <td data-label="Agency">Coastal Home Support</td>
-                <td data-label="Market">Naples</td>
-                <td data-label="Google"><span class="rating">★ 4.6 (87)</span></td>
-                <td data-label="Instagram">@coastal<span class="redacted">•••</span></td>
-                <td data-label="Booking signal"><span class="signal-yes">Request form found</span></td>
-              </tr>
-              <tr>
-                <td data-label="Agency">Evergreen Care Partners</td>
-                <td data-label="Market">Orlando</td>
-                <td data-label="Google"><span class="rating">★ 4.9 (144)</span></td>
-                <td data-label="Instagram"><span class="redacted">Not found</span></td>
-                <td data-label="Booking signal"><span class="signal-no">Phone only</span></td>
-              </tr>
-              <tr>
-                <td data-label="Agency">Harbor Light Home Care</td>
+                <td data-label="Agency">Allstar Home Care LLC</td>
                 <td data-label="Market">Jacksonville</td>
-                <td data-label="Google"><span class="rating">★ 4.4 (53)</span></td>
-                <td data-label="Instagram">@harbor<span class="redacted">•••</span></td>
-                <td data-label="Booking signal"><span class="signal-yes">Consult form found</span></td>
+                <td data-label="Google"><span class="rating">★ 5.0 (36)</span></td>
+                <td data-label="Instagram"><span class="redacted">Not found</span></td>
+                <td data-label="Booking signal"><span class="signal-yes">Consultation form found</span></td>
               </tr>
               <tr>
-                <td data-label="Agency">Palm Grove Assistance</td>
-                <td data-label="Market">Fort Lauderdale</td>
-                <td data-label="Google"><span class="rating">★ 4.7 (118)</span></td>
-                <td data-label="Instagram">@palm<span class="redacted">•••</span></td>
-                <td data-label="Booking signal"><span class="signal-no">No online booking</span></td>
+                <td data-label="Agency">Cruz Homecare &amp; Educational Services LLC</td>
+                <td data-label="Market">Kissimmee</td>
+                <td data-label="Google"><span class="rating">★ 4.8 (20)</span></td>
+                <td data-label="Instagram"><span class="redacted">Not found</span></td>
+                <td data-label="Booking signal"><span class="signal-no">None found</span></td>
+              </tr>
+              <tr>
+                <td data-label="Agency">Comfort Keepers</td>
+                <td data-label="Market">Altamonte Springs</td>
+                <td data-label="Google"><span class="rating">★ 4.1 (7)</span></td>
+                <td data-label="Instagram"><span class="redacted">Not found</span></td>
+                <td data-label="Booking signal"><span class="signal-no">None found</span></td>
+              </tr>
+              <tr>
+                <td data-label="Agency">Touch By An Angel Home Care Inc</td>
+                <td data-label="Market">Boca Raton</td>
+                <td data-label="Google"><span class="rating">★ 5.0 (2)</span></td>
+                <td data-label="Instagram"><span class="redacted">Not found</span></td>
+                <td data-label="Booking signal"><span class="signal-no">None found</span></td>
+              </tr>
+              <tr>
+                <td data-label="Agency">Nursing Styles</td>
+                <td data-label="Market">Largo</td>
+                <td data-label="Google"><span class="rating">★ 5.0 (8)</span></td>
+                <td data-label="Instagram"><span class="redacted">Not found</span></td>
+                <td data-label="Booking signal"><span class="signal-no">None found</span></td>
               </tr>
             </tbody>
           </table>
@@ -684,7 +687,7 @@
           <div class="section-label">How delivery works</div>
           <div>
             <h2>Subscribe once. The market keeps moving to you.</h2>
-            <p class="lead">The full Florida database lands the day you subscribe. After that: the Hot 10 every Monday, a fully refreshed master CSV on the 1st of each month, and every new state at no extra cost as markets validate.</p>
+            <p class="lead">The full Florida database lands the day you subscribe. After that: the Hot 10 every Monday, a fully refreshed master CSV on the 1st of each month, and every new state at no extra cost as it launches — Texas on October 14, then a new state every week.</p>
           </div>
         </div>
         <div class="refresh-strip">
@@ -733,7 +736,7 @@
           </details>
           <details>
             <summary>How does priority scoring work?</summary>
-            <p>Each account is scored from 0–100 across four components: fresh market events (up to 35), digital conversion gaps (up to 25), reputation opportunity (up to 20), and contactability plus fit (up to 20). The contributing signals and a plain-English rationale appear beside every score, so your team can audit the ranking instead of trusting a black box.</p>
+            <p>Every agency starts at 0 and earns points for real, checkable signals: a license issued in the last 90 days (+30), no online booking (+15), a dead or missing Instagram (+15), a rating under 4.3 (+15), under 20 Google reviews (+10), no working website (+15), a new location (+10), already running ads (+10), and an identified owner (+5). Scores land in tiers: 75+ HOT, 50–74 WARM, 25–49 NURTURE, under 25 COLD. No signal, no points — the reason sits next to every score.</p>
           </details>
           <details>
             <summary>What counts as a trigger?</summary>
@@ -741,7 +744,7 @@
           </details>
           <details>
             <summary>Which states are covered?</summary>
-            <p>Florida is live now with 100+ verified records. Texas, California, and New York are on the roadmap and launch after Florida validates with paying subscribers — no state is announced before its data is verified. Every new state is included in your subscription at no extra cost, and founding members vote on which state comes next.</p>
+            <p>Florida is live now with 102 verified records. Texas launches October 14 — then a new state every week, with California and New York next in the rollout. Every new state is included in your subscription at no extra cost.</p>
           </details>
           <details>
             <summary>Can I cancel?</summary>
@@ -784,7 +787,7 @@
     </div>
   </nav>
   <footer>
-    <div class="wrap"><span>HomeCare Intel</span><span>The home care agency database for marketers — Florida live now</span></div>
+    <div class="wrap"><span>HomeCare Intel</span><span>Built by Jesse Santiago — founder, HomeCare Intel.</span><span>The home care agency database for marketers — Florida live now</span></div>
   </footer>
 </body>
 </html>
