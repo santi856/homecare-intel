@@ -344,7 +344,7 @@
     details[open] summary::after { content: "−"; }
     details p { max-width: 740px; padding: 0 50px 24px 0; margin: 0; color: var(--muted); }
 
-    .final { position: relative; overflow: hidden; padding: 120px 0; text-align: center; border-bottom: 0; }
+    .pricing-grid { display: grid; grid-template-columns: repeat(2, 1fr); border-top: 1px solid var(--line); border-left: 1px solid var(--line); } .pricing-card { padding: 32px; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); background: var(--surface); display: flex; flex-direction: column; } .pricing-card h3 { margin-bottom: 14px; font-size: clamp(24px, 2.6vw, 32px); line-height: 1.1; letter-spacing: -.03em; } .pricing-card p { color: var(--muted); flex: 1; } .pricing-card .cta { align-self: flex-start; margin-top: 10px; } @media (max-width: 900px) { .pricing-grid { grid-template-columns: 1fr; } }    .final { position: relative; overflow: hidden; padding: 120px 0; text-align: center; border-bottom: 0; }
     .final::before { content: ""; position: absolute; inset: 0; background: repeating-linear-gradient(90deg, transparent 0, transparent 43px, var(--grid-line) 44px); pointer-events: none; }
     .final-inner { position: relative; z-index: 1; max-width: 850px; margin: 0 auto; }
     .final h2 { margin-left: auto; margin-right: auto; }
@@ -754,7 +754,7 @@
       </div>
     </section>
 
-    <section class="final">
+    <section id="pricing"><div class="wrap"><div class="section-head"><div class="section-label">Pricing</div><div><h2>Two ways to work the market.</h2><p class="lead">Start with the database and run outreach yourself — or hand us the outreach and get calls booked on your calendar.</p></div></div><div class="pricing-grid"><article class="pricing-card"><span class="problem-num">01 / DO IT YOURSELF</span><h3>HomeCare Intel — $199/mo</h3><p>The database, do it yourself. Every verified licensed Florida home care agency: owners, phones, license numbers, ratings, booking gaps, priority scores. Refreshed monthly, weekly Hot 10, founding rate locked for life.</p><a class="cta" href="https://buy.stripe.com/dRm4gA7548Xi03Te319AA00">Subscribe</a></article><article class="pricing-card"><span class="problem-num">02 / DONE FOR YOU</span><h3>HomeCare Intel DFY — $800/mo</h3><p>We run it for you. We email the licensed home care agency owners in your market, work every reply, and book calls on your calendar. Full database access included, every reply forwarded to you, weekly sent / replies / booked report. Guarantee: zero positive replies in month one, month two is free.</p><a class="cta" href="mailto:jesusasantiago413@gmail.com?subject=HomeCare%20Intel%20DFY">Book a call</a></article></div></div></section>     <section class="final">
       <div class="wrap final-inner">
         <div class="eyebrow">Florida live now</div>
         <h2>Start in Florida. Grow across the USA.</h2>
