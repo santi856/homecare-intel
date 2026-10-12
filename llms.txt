@@ -1,6 +1,6 @@
 # HomeCare Intel
 
-HomeCare Intel books calls with home care agency owners for businesses that sell into home care — done-for-you outreach backed by a scored database of 2,589 licensed agencies across 21 live states (Pilot Flight $400 one-time, DFY $800/mo, DIY database $299/mo).
+HomeCare Intel books calls with home care agency owners for businesses that sell into home care — done-for-you outreach backed by a scored database of 2,589 licensed agencies across 21 live states (Pilot Flight $400 one-time, DFY $800/mo, DIY database $299/mo for any 3 states, All-Access $499/mo for every live state).
 
 ## Main pages
 - [HomeCare Intel](https://santi856.github.io/homecare-intel/): done-for-you outreach + the home care agency database

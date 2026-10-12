@@ -13,6 +13,7 @@
   var DIY_LINK = 'https://buy.stripe.com/14AbJ29dc2yU4k96Az9AA01';
   var SAMPLE_MAILTO = 'mailto:jesusasantiago413@gmail.com?subject=Send%20me%20the%20free%20Florida%20sample';
   var PARTNER_MAILTO = 'mailto:jesusasantiago413@gmail.com?subject=Partnership%20with%20HomeCare%20Intel';
+  var ALLACCESS_MAILTO = 'mailto:jesusasantiago413@gmail.com?subject=Start%20me%20on%20All-Access%20($499/mo)';
 
   var CSS = [
     '.hci-launcher{position:fixed;right:20px;bottom:calc(20px + env(safe-area-inset-bottom));z-index:99998;background:#087c5c;color:#fff;border:0;border-radius:999px;padding:13px 20px;font:600 15px/1.2 "DM Sans",system-ui,sans-serif;cursor:pointer;box-shadow:0 10px 30px rgba(16,33,27,.28);transition:background .15s ease,transform .15s ease}',
@@ -141,16 +142,24 @@
       return {
         text: 'Two ways in.\n' +
           'Done-For-You is $800/mo: we email the owners in your market, work every reply, and book calls on your calendar. The full database is included, and zero positive replies in month one means month two is free.\n' +
-          'Do-It-Yourself is $299/mo: the scored database itself \u2014 owners, direct phones, licenses, scores. Verified owner emails are DFY-only.\n' +
+          'Do-It-Yourself is $299/mo: the scored database for any 3 states you choose \u2014 owners, direct phones, licenses, scores. Add a state anytime for $75/mo, or take every live state with All-Access at $499/mo \u2014 message us to start that one. Verified owner emails are DFY-only.\n' +
           'Both are month-to-month, cancel anytime, and the rate you start at never goes up.',
         buttons: [btn('Start DFY \u2014 $800/mo', DFY_LINK), btn('Get the database \u2014 $299/mo', DIY_LINK, true)]
+      };
+    },
+    allaccess: function () {
+      return {
+        text: 'All-Access is $499/mo: the scored database for every live state \u2014 21 today, and every new state as it is verified, at no extra cost.\n' +
+          'DIY at $299/mo covers any 3 states you choose, and you can add a state anytime for $75/mo. Verified owner emails are DFY-only on both.\n' +
+          'All-Access starts with a message to us \u2014 hit the button and we will set you up.',
+        buttons: [btn('Message us to start All-Access', ALLACCESS_MAILTO), btn('Get DIY \u2014 $299/mo (3 states)', DIY_LINK, true)]
       };
     },
     how: function () {
       return {
         text: 'Here is the whole job.\n' +
           'Done-For-You: 1) You pick your market and tell us who you sell to. 2) You approve the outreach angle \u2014 nothing sends until you say go. 3) We email the owners and work every reply; every reply is forwarded to you the same day it lands. 4) Owners who raise a hand get booked on your calendar, and you get a weekly report \u2014 sent, replies, booked.\n' +
-          'Do-It-Yourself: the full file lands in your inbox today. Sort by score, work the HOT rows first, get your Hot 10 every Monday and a fresh, re-verified file on the 1st.',
+          'Do-It-Yourself: your state files land in your inbox today. Sort by score, work the HOT rows first, get your Hot 10 for your states every Monday and fresh, re-verified files on the 1st.',
         buttons: [btn('See how it works', howHref())]
       };
     },
@@ -184,8 +193,8 @@
     },
     fresh: function () {
       return {
-        text: 'The database is re-verified monthly \u2014 a fresh full file lands on the 1st.\n' +
-          'Every Monday you also get the Hot 10: the ten best-timed agencies that week \u2014 new licenses, rating drops, new openings.',
+        text: 'The database is re-verified monthly \u2014 fresh files for your states land on the 1st.\n' +
+          'Every Monday you also get the Hot 10 for your states: the ten best-timed agencies that week \u2014 new licenses, rating drops, new openings.',
         buttons: [btn('Email me the free sample', SAMPLE_MAILTO)]
       };
     },
@@ -262,6 +271,7 @@
     if (includesAny(text, ['guarantee', 'month two free', 'no replies', 'zero replies', 'what if it doesn', 'what happens if'])) return { intent: 'guarantee' };
     if (includesAny(text, ['include', 'fields', 'columns', 'what do i get', 'whats in', 'what is in', 'emails included', 'owner email', 'data points'])) return { intent: 'inside' };
     if (includesAny(text, ['fresh', 'updated', 'update', 'current', 'stale', 'how often', 'accurate', 'accuracy', 'verified'])) return { intent: 'fresh' };
+    if (includesAny(text, ['all-access', 'all access', 'every state', 'all the states', 'whole map', 'entire map'])) return { intent: 'allaccess' };
     if (includesAny(text, ['price', 'pricing', 'cost', 'how much', '$', 'rate', 'expensive', 'charge', 'sign up', 'signup', 'subscribe', 'buy', 'get started', 'checkout', 'order'])) return { intent: 'price' };
     if (includesAny(text, ['how does', 'how it works', 'how do i', 'how to', 'how the', 'process', 'steps', 'walkthrough', 'walk me', 'use it', 'using it', 'works'])) return { intent: 'how' };
     if (includesAny(text, ['coverage', 'states', 'covered', 'where', 'locations', 'available in', 'which state'])) return { intent: 'coverage' };
