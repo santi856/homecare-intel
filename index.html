@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <meta name="color-scheme" content="light dark" />
-  <meta name="description" content="HomeCare Intel books calls with home care agency owners for businesses that sell into home care. Done-For-You ($800/mo): we email the owners in your market, work every reply, and book calls on your calendar. Start with a $400 Pilot Flight — one full outreach flight in your market, credited toward DFY — or run it yourself with the scored agency database: 2,589 agencies tracked across 21 live states (DIY, $299/mo)." />
+  <meta name="description" content="Done-for-you outreach that books calls with home care agency owners, backed by a scored database of 2,589 agencies in 21 states. From $299/mo." />
   <link rel="canonical" href="https://santi856.github.io/homecare-intel/" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="HomeCare Intel" />
@@ -50,6 +50,24 @@
         "availability": "https://schema.org/InStock"
       }
     ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "HomeCare Intel",
+    "url": "https://santi856.github.io/homecare-intel/",
+    "logo": "https://santi856.github.io/homecare-intel/homecare-intel-logo-square.png",
+    "description": "Done-for-you outreach that books calls with home care agency owners, backed by a scored database of 2,589 agencies in 21 states.",
+    "founder": { "@type": "Person", "name": "Jesse Santiago" },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+1-838-304-3003",
+      "email": "jesusasantiago413@gmail.com",
+      "contactType": "sales",
+      "areaServed": "US"
+    }
   }
   </script>
   <script type="application/ld+json">
@@ -475,16 +493,53 @@
     .inbox-strip p { margin: 0; color: var(--muted); font-size: 15px; }
     .inbox-strip strong { color: var(--ink); }
     @media (max-width: 900px) { .use-grid, .inbox-strip { grid-template-columns: 1fr; } .inbox-strip > div + div { border-left: 0; border-top: 1px solid var(--line); } }
+
+    .topnav { position: sticky; top: 0; z-index: 60; background: var(--bg); border-bottom: 1px solid var(--line); }
+    .topnav-in { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 56px; }
+    .topnav-brand { font-weight: 700; letter-spacing: -.02em; text-decoration: none; display: inline-flex; align-items: center; min-height: 44px; }
+    .topnav-links { display: flex; align-items: center; gap: 4px 22px; flex-wrap: wrap; }
+    .topnav-links a { display: inline-flex; align-items: center; min-height: 44px; padding: 0 4px; font-weight: 600; font-size: 15px; color: var(--accent); text-decoration: none; }
+    .topnav-links a:hover { text-decoration: underline; }
+
+    .pricing-note-line { margin: 0 0 18px; font-size: 17px; font-weight: 600; color: var(--ink); }
+    .pricing-card.featured { background: var(--accent-soft); border-color: var(--accent); box-shadow: inset 0 0 0 1px var(--accent); position: relative; }
+    .popular-badge { display: inline-block; align-self: flex-start; margin-bottom: 14px; padding: 5px 12px; border-radius: 999px; background: var(--accent); color: var(--accent-ink); font: 600 11px/1.4 "IBM Plex Mono", monospace; text-transform: uppercase; letter-spacing: .08em; }
+
+    .compare-table-wrap { margin-top: 34px; overflow-x: auto; border: 1px solid var(--line); background: var(--surface); }
+    .compare-table { width: 100%; border-collapse: collapse; min-width: 640px; font-size: 15px; }
+    .compare-table caption { text-align: left; padding: 18px 22px 4px; font-weight: 700; font-size: 18px; color: var(--ink); }
+    .compare-table th, .compare-table td { padding: 12px 22px; text-align: left; border-bottom: 1px solid var(--line); vertical-align: top; }
+    .compare-table thead th { font-size: 16px; color: var(--ink); }
+    .compare-table tbody th { font-weight: 600; color: var(--ink); white-space: nowrap; }
+    .compare-table td { color: var(--muted); }
+    .compare-table tr:last-child td, .compare-table tr:last-child th { border-bottom: 0; }
+
+    .founder-block { display: flex; gap: 28px; align-items: flex-start; border: 1px solid var(--line); background: var(--surface); padding: 32px; }
+    .founder-block img { width: 120px; height: 120px; border-radius: 50%; object-fit: cover; flex: 0 0 auto; }
+    .founder-block h2 { margin-top: 0; }
+    .founder-block p { color: var(--muted); }
+    .founder-block .founder-name { color: var(--ink); font-weight: 700; }
+    @media (max-width: 700px) { .founder-block { flex-direction: column; } }
   </style>
 </head>
 <body>
+  <header class="topnav">
+    <div class="wrap topnav-in">
+      <a class="topnav-brand" href="./">HomeCare Intel</a>
+      <nav class="topnav-links" aria-label="Main">
+        <a href="#pricing">Pricing</a>
+        <a href="#faq">FAQ</a>
+        <a href="mailto:jesusasantiago413@gmail.com?subject=Send%20me%20the%20free%20Florida%20sample">Get the free sample</a>
+      </nav>
+    </div>
+  </header>
   <main>
     <section class="hero">
       <div class="wrap hero-grid">
         <div class="hero-copy">
           <div class="eyebrow">Done-for-you outreach · 21 states live</div>
           <h1>We book calls with home care agency owners.</h1>
-          <p>We put you on calls with home care agency owners. Underneath it is a database of 2,589 agencies in 21 states — owners, phones, ratings, and the gaps that make an agency ready to buy. With Done-For-You, we email the owners in your market, work every reply, and put calls on your calendar. Rather do it yourself? The full scored database is $299/mo.</p>
+          <p>For businesses that sell into home care: we email agency owners in your market, work every reply, and book calls on your calendar. Underneath it all, a scored database of 2,589 agencies in 21 states.</p>
           <div class="hero-action">
             <a class="cta" href="https://buy.stripe.com/28EaEY0GGehC2c1bUT9AA02">Start DFY — $800/mo</a>
             <a class="cta secondary" href="mailto:jesusasantiago413@gmail.com?subject=Send%20me%20the%20free%20Florida%20sample">Get the free sample</a>
@@ -842,6 +897,26 @@
       </div>
     </section>
 
+    <!--
+      TESTIMONIAL SECTION — STUB (audit D3.2 / Quick win 1). NOTHING HERE RENDERS — do not uncomment until real client quotes exist.
+      TO FILL: for each of the first DFY / Pilot clients, get a one-line quote with (1) first name, (2) company or role,
+      (3) a specific outcome (replies received, calls booked, clients signed). Replace the bracketed placeholders below,
+      then remove this comment wrapper to publish. 3–5 cards. Never invent a quote, name, or outcome.
+    <section>
+      <div class="wrap">
+        <div class="section-head">
+          <div class="section-label">Client results</div>
+          <div><h2>What clients got.</h2></div>
+        </div>
+        <div class="proof-grid">
+          <article class="proof-stat"><p>"[One-line client quote with a specific outcome]"</p><span class="stat-note">[First name], [company or role] — [outcome: e.g. calls booked / replies / clients signed]</span></article>
+          <article class="proof-stat"><p>"[One-line client quote with a specific outcome]"</p><span class="stat-note">[First name], [company or role] — [outcome]</span></article>
+          <article class="proof-stat"><p>"[One-line client quote with a specific outcome]"</p><span class="stat-note">[First name], [company or role] — [outcome]</span></article>
+        </div>
+      </div>
+    </section>
+    -->
+
     <section>
       <div class="wrap">
         <div class="section-head">
@@ -886,7 +961,7 @@
       </div>
     </section>
 
-    <section>
+    <section id="faq">
       <div class="wrap">
         <div class="section-head">
           <div class="section-label">FAQ</div>
@@ -915,7 +990,7 @@
           </details>
           <details>
             <summary>How is this different from Apollo or ZoomInfo?</summary>
-            <p>Broad B2B platforms are built to cover every industry. HomeCare Intel is built around one vertical and includes license context plus senior-care-specific prospecting signals — such as visible Instagram activity and online-booking gaps — that broad databases typically do not carry.</p>
+            <p>Broad B2B platforms are built to cover every industry. HomeCare Intel is built around one vertical and includes license context plus senior-care-specific prospecting signals — such as visible Instagram activity and online-booking gaps — that broad databases typically do not carry. <a href="vs.html" style="color:var(--accent);font-weight:600">See the full side-by-side: HomeCare Intel vs Apollo and ZoomInfo →</a></p>
           </details>
           <details>
             <summary>What format do I receive?</summary>
@@ -963,7 +1038,19 @@
       </div>
     </section>
 
-    <section id="pricing"><div class="wrap"><div class="section-head"><div class="section-label">Pricing</div><div><h2>Start with one flight.</h2><p class="lead">See it work in your market before any subscription — one Pilot Flight, $400 one time, credited toward DFY. Or go straight to the tier that fits.</p></div></div><div class="pricing-grid"><article class="pricing-card"><span class="problem-num">01 / PILOT FLIGHT</span><h3>Pilot Flight — $400 one-time</h3><p>One full outreach flight, before any subscription. We email the licensed home care agency owners in your market, work every reply, and book calls on your calendar — you keep every reply and every booked call. The full $400 credits toward DFY if you continue within 14 days. Zero positive replies and we run a second flight in another market, free. Still zero — full refund.</p><a class="cta" href="mailto:jesusasantiago413@gmail.com?subject=Start%20my%20Pilot%20Flight">Start with the Pilot Flight — $400</a></article><article class="pricing-card"><span class="problem-num">02 / DONE FOR YOU</span><h3>HomeCare Intel DFY — $800/mo</h3><p>We run it for you. We email the licensed home care agency owners in your market, work every reply, and book calls on your calendar. You approve the angle before anything sends, every reply lands in your inbox the same day, and if month one gets zero positive replies, month two is on us. DFY campaigns start with the verified owner emails in your market — 551 verified owner emails across the 21 live states — and the list grows every refresh. Full database access included, weekly sent / replies / booked report.</p><p class="excl">Want your market locked? Exclusivity is +$200/mo — nobody else we work with emails your owners. Ask when you start.</p><a class="cta" href="https://buy.stripe.com/28EaEY0GGehC2c1bUT9AA02">Start DFY — $800/mo</a></article><article class="pricing-card"><span class="problem-num">03 / DO IT YOURSELF</span><h3>HomeCare Intel — $299/mo</h3><p>The whole market in one file — owners, direct phones, and the reason each agency is worth a call. Your team runs the outreach; we keep the file fresh — full database on signup, Hot 10 every week, refreshed monthly. One honest note: emails aren’t in this tier — email is DFY’s job, and it’s kind of the point of DFY.</p><a class="cta" href="https://buy.stripe.com/14AbJ29dc2yU4k96Az9AA01">Subscribe</a></article></div><div class="afterpay-grid"><div><strong>After you pay — Pilot</strong><p>Send us your market and your booking link. You approve the outreach angle, the flight goes out, and every reply is forwarded the same day it lands. Your $400 credits toward DFY for 14 days.</p></div><div><strong>After you pay — DIY</strong><p>The full file lands in your inbox today. Hot 10 every Monday. Fresh file on the 1st. Cancel anytime — reply to any email from us.</p></div><div><strong>After you pay — DFY</strong><p>We send you five quick questions (market, your offer, your booking link). You approve the outreach angle, then owners start hearing from you — replies forwarded to you the same day they land.</p></div></div><div class="sample-row"><a class="cta secondary" href="mailto:jesusasantiago413@gmail.com?subject=Send%20me%20the%20free%20Florida%20sample">Get the free sample</a><span class="price-note">See it first — 25 real rows from the Florida file, free. Owners, phones, scores, the whole shape of the file.</span></div></div></section>     <section class="final">
+    <!--
+      REVIEWS STRIP — STUB (audit D3.5 / Do-this-quarter 2). NOTHING HERE RENDERS — do not uncomment until real third-party reviews exist.
+      TO FILL: once the first handful of genuine reviews land on one platform (Trustpilot or G2), insert the platform name,
+      the real rating, the real review count, and the date below, then remove this comment wrapper to publish.
+      Never invent a rating, count, badge, or quote.
+    <section>
+      <div class="wrap">
+        <p class="pricing-note-line">Rated [X.X] out of 5 from [N] reviews on [Trustpilot / G2] — as of [Month Year].</p>
+      </div>
+    </section>
+    -->
+
+    <section id="pricing"><div class="wrap"><div class="section-head"><div class="section-label">Pricing</div><div><h2>Start with one flight.</h2><p class="lead">See it work in your market before any subscription — one Pilot Flight, $400 one time, credited toward DFY. Or go straight to the tier that fits.</p></div></div><p class="pricing-note-line">Most clients start with the Pilot Flight, then move to DFY.</p><div class="pricing-grid"><article class="pricing-card"><span class="problem-num">01 / PILOT FLIGHT</span><h3>Pilot Flight — $400 one-time</h3><p>One full outreach flight, before any subscription. We email the licensed home care agency owners in your market, work every reply, and book calls on your calendar — you keep every reply and every booked call. The full $400 credits toward DFY if you continue within 14 days. Zero positive replies and we run a second flight in another market, free. Still zero — full refund.</p><a class="cta" href="mailto:jesusasantiago413@gmail.com?subject=Start%20my%20Pilot%20Flight">Start with the Pilot Flight — $400</a></article><article class="pricing-card featured"><span class="popular-badge">Most popular</span><span class="problem-num">02 / DONE FOR YOU</span><h3>HomeCare Intel DFY — $800/mo</h3><p>We run it for you. We email the licensed home care agency owners in your market, work every reply, and book calls on your calendar. You approve the angle before anything sends, every reply lands in your inbox the same day, and if month one gets zero positive replies, month two is on us. DFY campaigns start with the verified owner emails in your market — 551 verified owner emails across the 21 live states — and the list grows every refresh. Full database access included, and a weekly report on every flight — sends, replies, reply rate, and calls booked.</p><p class="excl">Want your market locked? Exclusivity is +$200/mo — nobody else we work with emails your owners. Ask when you start.</p><a class="cta" href="https://buy.stripe.com/28EaEY0GGehC2c1bUT9AA02">Start DFY — $800/mo</a></article><article class="pricing-card"><span class="problem-num">03 / DO IT YOURSELF</span><h3>HomeCare Intel — $299/mo</h3><p>The whole market in one file — owners, direct phones, and the reason each agency is worth a call. Your team runs the outreach; we keep the file fresh — full database on signup, Hot 10 every week, refreshed monthly. One honest note: emails aren’t in this tier — email is DFY’s job, and it’s kind of the point of DFY.</p><a class="cta" href="https://buy.stripe.com/14AbJ29dc2yU4k96Az9AA01">Subscribe</a></article></div><div class="afterpay-grid"><div><strong>After you pay — Pilot</strong><p>Send us your market and your booking link. You approve the outreach angle, the flight goes out, and every reply is forwarded the same day it lands. Your $400 credits toward DFY for 14 days.</p></div><div><strong>After you pay — DIY</strong><p>The full file lands in your inbox today. Hot 10 every Monday. Fresh file on the 1st. Cancel anytime — reply to any email from us.</p></div><div><strong>After you pay — DFY</strong><p>We send you five quick questions (market, your offer, your booking link). You approve the outreach angle, then owners start hearing from you — replies forwarded to you the same day they land.</p></div></div><div class="sample-row"><a class="cta secondary" href="mailto:jesusasantiago413@gmail.com?subject=Send%20me%20the%20free%20Florida%20sample">Get the free sample</a><span class="price-note">See it first — 25 real rows from the Florida file, free. Owners, phones, scores, the whole shape of the file.</span></div><div class="compare-table-wrap"><table class="compare-table"><caption>Compare the three ways in</caption><thead><tr><th scope="col"></th><th scope="col">Pilot Flight</th><th scope="col">DFY</th><th scope="col">DIY</th></tr></thead><tbody><tr><th scope="row">Price</th><td>$400 one-time</td><td>$800/mo</td><td>$299/mo</td></tr><tr><th scope="row">What you get</th><td>One full outreach flight in your market — we email the owners, work every reply, and book calls on your calendar. You keep every reply and booked call.</td><td>We run your outreach month to month: write and send it, work every reply, book calls on your calendar, plus full database access for your market.</td><td>The base scored database, self-serve: agency names, phones, addresses, license numbers, Google ratings, booking and social flags, and a 0–100 priority score with the reason attached.</td></tr><tr><th scope="row">Verified owner emails</th><td>We email the owners for you — included in the flight</td><td>Included — the enriched data (verified emails + owner-direct details) is part of DFY</td><td>Not included — emails are DFY-only</td></tr><tr><th scope="row">Reporting</th><td>Every reply forwarded the same day</td><td>Every reply forwarded the same day; weekly sent / replies / booked report</td><td>Weekly Hot 10; monthly refresh</td></tr><tr><th scope="row">Guarantee</th><td>Zero positive replies → a second flight in another market, free; still zero → full refund</td><td>Zero positive replies in month 1 → month 2 free</td><td>Cancel anytime</td></tr><tr><th scope="row">Setup</th><td>None</td><td>$250 one-time — waived for the first 13 Founding clients and for partner referrals</td><td>None</td></tr><tr><th scope="row">Credit</th><td>The full $400 credits toward DFY if you continue within 14 days</td><td>—</td><td>—</td></tr></tbody></table></div></div></section>     <section class="final">
       <div class="wrap final-inner">
         <div class="eyebrow">21 states live · 2,589 agencies tracked</div>
         <h2>Your next client runs a home care agency. We can put you on their calendar.</h2>
@@ -973,6 +1060,22 @@
         <a class="cta secondary" href="https://buy.stripe.com/14AbJ29dc2yU4k96Az9AA01">Subscribe — $299/mo</a>
         <span class="final-note">DFY guarantee: zero positive replies in month one, month two free · Your starting rate is locked for as long as you stay subscribed · Cancel anytime</span>
         <p style="margin-top:22px"><a href="mailto:jesusasantiago413@gmail.com?subject=Send%20me%20the%20free%20Florida%20sample" style="color:var(--accent);font-weight:600;text-decoration:none">Or start with the free 25-row sample →</a></p>
+      </div>
+    </section>
+
+    <section id="founder">
+      <div class="wrap">
+        <div class="founder-block">
+          <img src="founder-jesse.jpg" alt="Jesse Santiago, founder of HomeCare Intel" width="120" height="120" />
+          <div>
+            <div class="section-label">Why I built this</div>
+            <h2>Built by the person who got tired of the scavenger hunt.</h2>
+            <p>Prospecting into home care used to mean a dozen open Maps tabs, one state license lookup after another, and lists that were stale before the first call — hours of hunting before a single conversation. So I built the file I couldn't buy: every licensed agency scored, every owner named, refreshed every month. HomeCare Intel is that file, and the outreach service I wished had come with it.</p>
+            <p class="founder-name">Jesse Santiago — founder, HomeCare Intel</p>
+            <p>Questions? Call or text <a href="tel:+18383043003">(838) 304-3003</a> or email <a href="mailto:jesusasantiago413@gmail.com">jesusasantiago413@gmail.com</a>.</p>
+            <!-- FOUNDER SOCIAL LINK: insert Jesse's LinkedIn/X URL here -->
+          </div>
+        </div>
       </div>
     </section>
   </main>
@@ -1025,7 +1128,7 @@
     </div>
   </nav>
   <footer>
-    <div class="wrap"><span>HomeCare Intel</span><span>Built by Jesse Santiago — founder, HomeCare Intel.</span><span>We book calls with home care agency owners — 21 states live</span><span>Support: <a href="tel:+18383043003">call or text (838) 304-3003</a></span><span><a href="terms.html">Terms</a> · <a href="privacy.html">Privacy</a></span></div>
+    <div class="wrap"><span>HomeCare Intel</span><span>Built by Jesse Santiago — founder, HomeCare Intel.</span><span><a href="#founder">Why I built this</a></span><span><a href="vs.html">HomeCare Intel vs Apollo &amp; ZoomInfo</a></span><span>We book calls with home care agency owners — 21 states live</span><span>Support: <a href="tel:+18383043003">call or text (838) 304-3003</a></span><span><a href="terms.html">Terms</a> · <a href="privacy.html">Privacy</a></span></div>
   </footer>
   <script src="support-chat.js" defer></script>
 </body>
