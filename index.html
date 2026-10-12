@@ -50,7 +50,7 @@
     "@type": "FAQPage",
     "mainEntity": [
       { "@type": "Question", "name": "Where can I buy a list of home care agencies?", "acceptedAnswer": { "@type": "Answer", "text": "HomeCare Intel tracks 2,589 home care agencies across 21 live states — Florida, Texas, California, New York, Pennsylvania, Ohio, Washington, Illinois, Arizona, North Carolina, Georgia, Massachusetts, Virginia, New Jersey, Michigan, Tennessee, Missouri, Maryland, Wisconsin, Minnesota, and Colorado — built for businesses that sell into home care. Subscribe to the database for $299/month, or take Done-For-You ($800/month) and we run the outreach and book the calls for you." } },
-      { "@type": "Question", "name": "How much does HomeCare Intel cost?", "acceptedAnswer": { "@type": "Answer", "text": "Done-For-You is $800 per month: we email the agency owners in your market, work every reply, and book calls on your calendar — if month one produces zero positive replies, month two is free. The DIY database is $299 per month, cancel anytime. Whatever rate you start at is yours for as long as you stay subscribed — it never goes up on you. DFY carries a one-time $250 setup fee, waived for founding clients and for clients who come through a partner referral. DIY has no setup fee, and there is no per-record charge on either plan." } },
+      { "@type": "Question", "name": "How much does HomeCare Intel cost?", "acceptedAnswer": { "@type": "Answer", "text": "Done-For-You is $800 per month: we email the agency owners in your market, work every reply, and book calls on your calendar — if month one produces zero positive replies, month two is free. The DIY database is $299 per month, cancel anytime. Whatever rate you start at is yours for as long as you stay subscribed — it never goes up on you. DFY carries a one-time $250 setup fee — waived for founding clients and for partner referrals. There is no per-record charge." } },
       { "@type": "Question", "name": "What information is included for each agency?", "acceptedAnswer": { "@type": "Answer", "text": "Agency name, city, street address, phone, website, state license number, owner or administrator name, Google rating and review count, Instagram handle and recent activity, online-booking signal, a 0-100 priority score, a tier (HOT, WARM, NURTURE, or COLD), and a plain-English reason for the score. Fields that cannot be verified are left blank rather than estimated." } },
       { "@type": "Question", "name": "Who is HomeCare Intel for?", "acceptedAnswer": { "@type": "Answer", "text": "Any business that sells into home care: home care and senior care marketing specialists, software and EHR vendors, staffing platforms, billing and RCM firms, answering services, consultants, and franchise development firms. It is not a consumer directory and it is not for agencies looking to be listed." } },
       { "@type": "Question", "name": "What does Done-For-You (DFY) include?", "acceptedAnswer": { "@type": "Answer", "text": "We email the licensed home care agency owners in your market using the verified contacts in our database, work every reply, and book calls on your calendar. You approve the outreach angle before launch, every reply is forwarded to you the same day, and you get a weekly sent / replies / booked report. Full database access is included. Guarantee: zero positive replies in month one, month two is free." } },
@@ -448,6 +448,25 @@
       html { scroll-behavior: auto; }
       .cta { transition: none; }
     }
+
+    .use-grid { display: grid; grid-template-columns: repeat(2, 1fr); border-top: 1px solid var(--line); border-left: 1px solid var(--line); }
+    .use-card { padding: 32px; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); background: var(--surface); display: flex; flex-direction: column; }
+    .use-card h3 { margin-bottom: 18px; font-size: clamp(24px, 2.6vw, 32px); line-height: 1.1; letter-spacing: -.03em; }
+    .use-steps { list-style: none; margin: 0 0 20px; padding: 0; flex: 1; }
+    .use-steps li { display: flex; gap: 14px; padding: 13px 0; border-bottom: 1px solid var(--line); }
+    .use-steps li:last-child { border-bottom: 0; }
+    .use-steps .use-num { flex: 0 0 auto; width: 26px; height: 26px; border-radius: 50%; background: var(--accent); color: var(--accent-ink); font: 600 13px/26px "IBM Plex Mono", monospace; text-align: center; }
+    .use-steps p { margin: 0; color: var(--muted); font-size: 15.5px; }
+    .use-steps strong { color: var(--ink); }
+    .use-guarantee { margin: 0 0 20px; padding: 13px 16px; background: var(--accent-soft); border-radius: 10px; color: var(--ink); font-size: 15px; font-weight: 600; }
+    .use-card .cta { align-self: flex-start; }
+    .inbox-strip { margin-top: 26px; display: grid; grid-template-columns: repeat(2, 1fr); border: 1px solid var(--line); background: var(--surface-2); }
+    .inbox-strip > div { padding: 22px 26px; }
+    .inbox-strip > div + div { border-left: 1px solid var(--line); }
+    .inbox-strip .inbox-tag { display: block; margin-bottom: 8px; color: var(--accent); font: 600 11px/1.3 "IBM Plex Mono", monospace; text-transform: uppercase; letter-spacing: .08em; }
+    .inbox-strip p { margin: 0; color: var(--muted); font-size: 15px; }
+    .inbox-strip strong { color: var(--ink); }
+    @media (max-width: 900px) { .use-grid, .inbox-strip { grid-template-columns: 1fr; } .inbox-strip > div + div { border-left: 0; border-top: 1px solid var(--line); } }
   </style>
 </head>
 <body>
@@ -768,6 +787,54 @@
       </div>
     </section>
 
+    <section id="how-to-use">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="section-label">How you use it</div>
+          <div>
+            <h2>From signup to booked calls — here is the whole job.</h2>
+            <p class="lead">No walkthrough call needed. Two ways in, both start the day you sign up — this is exactly what happens, step by step.</p>
+          </div>
+        </div>
+        <div class="use-grid">
+          <article class="use-card">
+            <span class="problem-num">01 / DONE-FOR-YOU</span>
+            <h3>Done-For-You — $800/mo</h3>
+            <ol class="use-steps">
+              <li><span class="use-num">1</span><p><strong>Pick your market.</strong> 21 states live, 2,589 agencies tracked — tell us who you sell to and where.</p></li>
+              <li><span class="use-num">2</span><p><strong>Approve the angle.</strong> We draft the outreach first; nothing sends until you say go.</p></li>
+              <li><span class="use-num">3</span><p><strong>We email the owners and work every reply.</strong> Every reply is forwarded to you the same day it lands.</p></li>
+              <li><span class="use-num">4</span><p><strong>Calls land on your calendar.</strong> And every week you get the report — sent / replies / booked — even in a zero week.</p></li>
+            </ol>
+            <p class="use-guarantee">Zero positive replies in month one? Month two is free.</p>
+            <a class="cta" href="https://buy.stripe.com/28EaEY0GGehC2c1bUT9AA02">Start DFY — $800/mo</a>
+          </article>
+          <article class="use-card">
+            <span class="problem-num">02 / DO-IT-YOURSELF</span>
+            <h3>Do-It-Yourself — $299/mo</h3>
+            <ol class="use-steps">
+              <li><span class="use-num">1</span><p><strong>The full file lands in your inbox today.</strong> Owners, direct phones, license numbers, scores.</p></li>
+              <li><span class="use-num">2</span><p><strong>Sort by score and work HOT first.</strong> Every row carries the plain-English reason it is worth a call.</p></li>
+              <li><span class="use-num">3</span><p><strong>Every Monday: your Hot 10.</strong> The ten best-timed agencies in your market that week.</p></li>
+              <li><span class="use-num">4</span><p><strong>Fresh file on the 1st.</strong> Re-verified monthly — and your founding rate is locked for life.</p></li>
+            </ol>
+            <p class="use-guarantee">Full database from day one — Hot 10 every Monday, fresh file every month.</p>
+            <a class="cta" href="https://buy.stripe.com/14AbJ29dc2yU4k96Az9AA01">Get the database — $299/mo</a>
+          </article>
+        </div>
+        <div class="inbox-strip">
+          <div>
+            <span class="inbox-tag">What lands in your inbox — DFY weekly report (example)</span>
+            <p><strong>Sent: 48 · Interested: 3 · Calls booked: 2</strong><br />Latest booking: Tue 2:30 PM — a call with an agency owner, on your calendar.</p>
+          </div>
+          <div>
+            <span class="inbox-tag">What lands in your inbox — Monday Hot 10 (example)</span>
+            <p><strong>BrightStar Care, Columbus OH — score 60</strong> — 3.3 stars, no online booking. One of the ten best-timed agencies in your market this week.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section>
       <div class="wrap">
         <div class="section-head">
@@ -825,7 +892,7 @@
           </details>
           <details>
             <summary>How much does HomeCare Intel cost?</summary>
-            <p>Done-For-You is $800 per month: we email the agency owners in your market, work every reply, and book calls on your calendar — if month one produces zero positive replies, month two is free. The DIY database is $299 per month, cancel anytime. Whatever rate you start at is yours for as long as you stay subscribed — it never goes up on you. DFY carries a one-time $250 setup fee, waived for founding clients and for clients who come through a partner referral. DIY has no setup fee, and there is no per-record charge on either plan.</p>
+            <p>Done-For-You is $800 per month: we email the agency owners in your market, work every reply, and book calls on your calendar — if month one produces zero positive replies, month two is free. The DIY database is $299 per month, cancel anytime. Whatever rate you start at is yours for as long as you stay subscribed — it never goes up on you. DFY carries a one-time $250 setup fee — waived for founding clients and for partner referrals. There is no per-record charge.</p>
           </details>
           <details>
             <summary>What information is included for each agency?</summary>
@@ -951,7 +1018,8 @@
     </div>
   </nav>
   <footer>
-    <div class="wrap"><span>HomeCare Intel</span><span>Built by Jesse Santiago — founder, HomeCare Intel.</span><span>We book calls with home care agency owners — 21 states live</span><span><a href="terms.html">Terms</a> · <a href="privacy.html">Privacy</a></span></div>
+    <div class="wrap"><span>HomeCare Intel</span><span>Built by Jesse Santiago — founder, HomeCare Intel.</span><span>We book calls with home care agency owners — 21 states live</span><span>Support: <a href="tel:+18383043003">call or text (838) 304-3003</a></span><span><a href="terms.html">Terms</a> · <a href="privacy.html">Privacy</a></span></div>
   </footer>
+  <script src="support-chat.js" defer></script>
 </body>
 </html>
