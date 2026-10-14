@@ -1,0 +1,30 @@
+name: HomeCare Intel | Free Research
+on:
+  schedule:
+    - cron: '17 1,7,13,19 * * *'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: homecare-intel-research
+  cancel-in-progress: false
+jobs:
+  research:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Unit and safety tests
+        run: npm --prefix autonomy test
+      - name: Find public B2B market signals without outreach or spending
+        run: npm --prefix autonomy run research
+      - name: Save research for operator review (public sources only)
+        uses: actions/upload-artifact@v4
+        with:
+          name: homecare-public-research
+          path: autonomy/out/public-research.json
+          retention-days: 7
+          if-no-files-found: error
