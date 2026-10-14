@@ -3,6 +3,10 @@ on:
   schedule:
     - cron: '17 1,7,13,19 * * *'
   workflow_dispatch:
+  pull_request:
+    paths:
+      - 'autonomy/**'
+      - '.github/workflows/autonomy-research.yml'
 permissions:
   contents: read
 concurrency:
@@ -20,8 +24,10 @@ jobs:
       - name: Unit and safety tests
         run: npm --prefix autonomy test
       - name: Find public B2B market signals without outreach or spending
+        if: github.event_name != 'pull_request'
         run: npm --prefix autonomy run research
       - name: Save research for operator review (public sources only)
+        if: github.event_name != 'pull_request'
         uses: actions/upload-artifact@v4
         with:
           name: homecare-public-research

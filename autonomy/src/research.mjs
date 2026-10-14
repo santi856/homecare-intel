@@ -61,7 +61,7 @@ export async function runResearch({fetcher=fetch,now=Date.now(),queries=QUERIES}
     records:dedupeSignals(reports.flatMap(r=>r.records))};
 }
 if(process.argv[1] && resolve(process.argv[1]) === resolve(new URL(import.meta.url).pathname)) {
-  const out=process.env.AUTONOMY_OUTPUT||'autonomy/out/public-research.json';
+  const out=process.env.AUTONOMY_OUTPUT||'out/public-research.json';
   try{
     const data=await runResearch();
     await mkdir(dirname(out),{recursive:true});
