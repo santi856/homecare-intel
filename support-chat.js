@@ -13,7 +13,7 @@
   var DIY_LINK = 'https://buy.stripe.com/14AbJ29dc2yU4k96Az9AA01';
   var SAMPLE_MAILTO = 'mailto:jesusasantiago413@gmail.com?subject=Send%20me%20the%20free%20Florida%20sample';
   var PARTNER_MAILTO = 'mailto:jesusasantiago413@gmail.com?subject=Partnership%20with%20HomeCare%20Intel';
-  var ALLACCESS_MAILTO = 'mailto:jesusasantiago413@gmail.com?subject=Start%20me%20on%20All-Access%20($499/mo)';
+  var ALLACCESS_MAILTO = 'https://buy.stripe.com/7sYeVe3SSb5qeYN6Az9AA08';
 
   var CSS = [
     '.hci-launcher{position:fixed;right:20px;bottom:calc(20px + env(safe-area-inset-bottom));z-index:99998;background:#087c5c;color:#fff;border:0;border-radius:999px;padding:13px 20px;font:600 15px/1.2 "DM Sans",system-ui,sans-serif;cursor:pointer;box-shadow:0 10px 30px rgba(16,33,27,.28);transition:background .15s ease,transform .15s ease}',
@@ -152,7 +152,7 @@
         text: 'All-Access is $499/mo: the scored database for every live state \u2014 21 today, and every new state as it is verified, at no extra cost.\n' +
           'DIY at $299/mo covers any 3 states you choose, and you can add a state anytime for $75/mo. Verified owner emails are DFY-only on both.\n' +
           'All-Access starts with a message to us \u2014 hit the button and we will set you up.',
-        buttons: [btn('Message us to start All-Access', ALLACCESS_MAILTO), btn('Get DIY \u2014 $299/mo (3 states)', DIY_LINK, true)]
+        buttons: [btn('Subscribe to All-Access — $499/mo', ALLACCESS_MAILTO), btn('Get DIY \u2014 $299/mo (3 states)', DIY_LINK, true)]
       };
     },
     how: function () {
