@@ -142,7 +142,7 @@
       return {
         text: 'Two ways in.\n' +
           'Done-For-You is $800/mo: we email the owners in your market, work every reply, and book calls on your calendar. The full database is included, and zero positive replies in month one means month two is free.\n' +
-          'Do-It-Yourself is $299/mo: the scored database for any 3 states you choose \u2014 owners, direct phones, licenses, scores. Add a state anytime for $75/mo, or take every live state with All-Access at $499/mo \u2014 message us to start that one. Verified owner emails are DFY-only.\n' +
+          'Do-It-Yourself is $299/mo: the scored database for any 3 states you choose \u2014 owners, direct phones, licenses, scores. Add a state anytime for $75/mo, or take every live state with All-Access at $499/mo \u2014 use the All-Access checkout on the pricing page. Verified owner emails are DFY-only.\n' +
           'Both are month-to-month, cancel anytime, and the rate you start at never goes up.',
         buttons: [btn('Start DFY \u2014 $800/mo', DFY_LINK), btn('Get the database \u2014 $299/mo', DIY_LINK, true)]
       };
@@ -151,15 +151,15 @@
       return {
         text: 'All-Access is $499/mo: the scored database for every live state \u2014 21 today, and every new state as it is verified, at no extra cost.\n' +
           'DIY at $299/mo covers any 3 states you choose, and you can add a state anytime for $75/mo. Verified owner emails are DFY-only on both.\n' +
-          'All-Access starts with a message to us \u2014 hit the button and we will set you up.',
+          'All-Access has direct Stripe checkout. After purchasing, complete the onboarding instructions so we can verify payment and deliver your files.',
         buttons: [btn('Subscribe to All-Access — $499/mo', ALLACCESS_MAILTO), btn('Get DIY \u2014 $299/mo (3 states)', DIY_LINK, true)]
       };
     },
     how: function () {
       return {
         text: 'Here is the whole job.\n' +
-          'Done-For-You: 1) You pick your market and tell us who you sell to. 2) You approve the outreach angle \u2014 nothing sends until you say go. 3) We email the owners and work every reply; every reply is forwarded to you the same day it lands. 4) Owners who raise a hand get booked on your calendar, and you get a weekly report \u2014 sent, replies, booked.\n' +
-          'Do-It-Yourself: your state files land in your inbox today. Sort by score, work the HOT rows first, get your Hot 10 for your states every Monday and fresh, re-verified files on the 1st.',
+          'Done-For-You: 1) You pick your market and tell us who you sell to. 2) You approve the outreach angle \u2014 nothing sends until you say go. 3) We email the owners and work every reply; we work and report replies according to your agreed campaign schedule. 4) Owners who raise a hand get booked on your calendar, and you get a weekly report \u2014 sent, replies, booked.\n' +
+          'Do-It-Yourself: after we verify payment, you select your states and we email the available files. Use the priority tiers as research clues, not proof of purchase intent; get your Hot 10 for your states every Monday and fresh, re-verified files on the 1st.',
         buttons: [btn('See how it works', howHref())]
       };
     },
@@ -180,7 +180,7 @@
     guarantee: function () {
       return {
         text: 'Straightforward: if month one of Done-For-You produces zero positive replies, month two is free.\n' +
-          'And every reply your outreach gets is forwarded to you the same day it lands \u2014 good or bad, you see everything we see.',
+          'And every reply is handled and reported according to our agreed campaign schedule \u2014 good or bad, you see everything we see.',
         buttons: [btn('Start DFY \u2014 $800/mo', DFY_LINK)]
       };
     },
@@ -214,7 +214,7 @@
     },
     support: function () {
       return {
-        text: 'Support is Jesse directly \u2014 no ticket queue. Call or text ' + PHONE_DISPLAY + ', or email ' + EMAIL + ' and it gets worked today.',
+        text: 'Support is Jesse directly \u2014 no ticket queue. Call or text ' + PHONE_DISPLAY + ', or email ' + EMAIL + ' and we follow up on email and phone inquiries.',
         buttons: [btn('Call ' + PHONE_DISPLAY, 'tel:+18383043003'), btn('Text', 'sms:+18383043003', true), btn('Email', 'mailto:' + EMAIL, true)]
       };
     },
@@ -232,7 +232,7 @@
     },
     fallback: function () {
       return {
-        text: 'I want to get that right \u2014 that is one for Jesse directly: call or text ' + PHONE_DISPLAY + ', or email ' + EMAIL + ' and it gets worked today.\n' +
+        text: 'I want to get that right \u2014 that is one for Jesse directly: call or text ' + PHONE_DISPLAY + ', or email ' + EMAIL + ' and we follow up on email and phone inquiries.\n' +
           'Meanwhile, the free sample shows the whole product:',
         buttons: [btn('Email me the free sample', SAMPLE_MAILTO), btn('Call ' + PHONE_DISPLAY, 'tel:+18383043003', true)]
       };
