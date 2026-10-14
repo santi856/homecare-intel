@@ -3,6 +3,11 @@ on:
   schedule:
     - cron: '17 1,7,13,19 * * *'
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'autonomy/**'
+      - '.github/workflows/autonomy-research.yml'
   pull_request:
     paths:
       - 'autonomy/**'
