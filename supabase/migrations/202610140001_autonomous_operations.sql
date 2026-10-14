@@ -111,7 +111,7 @@ end; $$;
 revoke all on function public.accept_hci_stripe_event(
  text,text,boolean,text,text,text,text,text,text,text,text,bigint,text) from public,anon,authenticated;
 grant execute on function public.accept_hci_stripe_event(
- text,text,boolean,text,text,text,text,text,text,text,bigint,text) to service_role;
+ text,text,boolean,text,text,text,text,text,text,text,text,bigint,text) to service_role;
 
 -- Only a private worker with the service role may claim jobs.
 create or replace function public.claim_hci_jobs(p_limit integer default 5)
