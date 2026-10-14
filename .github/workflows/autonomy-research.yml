@@ -1,7 +1,7 @@
 name: HomeCare Intel | Free Research
 on:
   schedule:
-    - cron: '17 1,7,13,19 * * *'
+    - cron: '13 */2 * * *'
   workflow_dispatch:
   push:
     branches: [main]
@@ -31,11 +31,16 @@ jobs:
       - name: Find public B2B market signals without outreach or spending
         if: github.event_name != 'pull_request'
         run: npm --prefix autonomy run research
+      - name: Evaluate company-wide operations and market supply (public data only)
+        if: github.event_name != 'pull_request'
+        run: npm --prefix autonomy run operations
       - name: Save research for operator review (public sources only)
         if: github.event_name != 'pull_request'
         uses: actions/upload-artifact@v4
         with:
           name: homecare-public-research
-          path: autonomy/out/public-research.json
+          path: |
+            autonomy/out/public-research.json
+            autonomy/out/public-operations.json
           retention-days: 7
           if-no-files-found: error

@@ -29,7 +29,7 @@ test('buyers receive a consultative answer and no fake sale',()=>{
 test('signed Stripe workflow still requires private fulfillment and persistent state',()=>{
  const x={id:'evt_1',type:'checkout.session.completed',livemode:true,data:{object:{object:'checkout.session',
   id:'cs_1',payment_link:'plink_1UPQ9PLTIwtoxZQIDUVEywTW',status:'complete',payment_status:'paid'}}};
- const r=runCompanyCycle({now,events:[{id:'stripe_evt1',kind:'stripe_event',stripeEvent:x}]});
+ const r=runCompanyCycle({now,events:[{id:'stripe_evt1',kind:'stripe_event',authenticated:true,stripeEvent:x}]});
  assert.equal(r.summary.verifiedPaidOrders,1);
  assert.ok(r.actions.some(a=>a.type==='start_paid_order'&&a.dependencies.includes('private_orders')));
  assert.equal(r.summary.profitClaim,null);
@@ -37,4 +37,20 @@ test('signed Stripe workflow still requires private fulfillment and persistent s
 test('capacity growth automatically asks for more delivery resources',()=>{
  const r=runCompanyCycle({now,events:[{id:'m1',kind:'market_update',market:'TX',activeCampaigns:10,availableContacts:500}]});
  assert.ok(r.actions.some(a=>a.type==='increase_capacity_before_accepting_new_campaigns'));
+});
+
+test('unsigned browser events can never claim a payment',()=>{
+ const x={id:'evt_fake',livemode:true,type:'checkout.session.completed',data:{object:{
+  object:'checkout.session',id:'cs_fake',status:'complete',payment_status:'paid',payment_link:'plink_1UPQ9PLTIwtoxZQIDUVEywTW'}}};
+ const r=runCompanyCycle({now,events:[{id:'browser',kind:'stripe_event',authenticated:false,stripeEvent:x}]});
+ assert.equal(r.summary.verifiedPaidOrders,0);
+ assert.equal(r.actions.some(a=>a.type==='start_paid_order'),false);
+});
+test('one paid checkout never creates two fulfillment jobs',()=>{
+ const x=id=>({id,livemode:true,type:'checkout.session.completed',data:{object:{
+  object:'checkout.session',id:'cs_unique',status:'complete',payment_status:'paid',payment_link:'plink_1UPQ9PLTIwtoxZQIDUVEywTW'}}});
+ const r=runCompanyCycle({now,events:[{id:'event_a',kind:'stripe_event',authenticated:true,stripeEvent:x('evt_1')},
+    {id:'event_b',kind:'stripe_event',authenticated:true,stripeEvent:x('evt_2')}]});
+ assert.equal(r.summary.verifiedPaidOrders,1);
+ assert.equal(r.actions.filter(a=>a.type==='start_paid_order').length,1);
 });

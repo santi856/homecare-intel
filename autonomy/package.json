@@ -3,9 +3,12 @@
   "version": "0.2.0",
   "private": true,
   "type": "module",
-  "engines": {"node": ">=22"},
+  "engines": {
+    "node": ">=22"
+  },
   "scripts": {
     "test": "node --test test/*.test.mjs",
-    "research": "node src/research.mjs"
+    "research": "node src/research.mjs",
+    "operations": "node src/operations.mjs"
   }
 }

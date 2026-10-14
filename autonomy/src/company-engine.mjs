@@ -47,8 +47,12 @@ export function runCompanyCycle({state=newCompanyState(),events=[],now=Date.now(
     reply:response.reply,checkout:response.checkout,stage:response.stage},
     ['private_crm','authenticated_inbox_adapter']);
   }else if(event.kind==='stripe_event'){
+   // Only an authenticated webhook verifier or separately authenticated Stripe fetch
+   // may mark an incoming event as trusted. A browser redirect cannot do so.
+   if(event.authenticated!==true)continue;
    const routed=routeStripeEvent(event.stripeEvent);
    if(routed.action==='start_private_fulfillment'){
+    if(s.orders[routed.checkoutSessionId])continue; // prevent double fulfillment on separate Stripe event IDs
     s.orders[routed.checkoutSessionId]={plan:routed.plan,status:'paid_verified',
       verifiedAt:iso(now),workflow:routed.workflow};
     dispatch('service_delivery','start_paid_order',{orderId:routed.checkoutSessionId,plan:routed.plan},
