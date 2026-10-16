@@ -1,41 +1,45 @@
-# HomeCare Intel
+# OwnerFlight
 
-HomeCare Intel books calls with home care agency owners for businesses that sell into home care — done-for-you outreach backed by a scored database of 2,716 licensed agencies across 22 live states (Pilot Flight $400 one-time, DFY $800/mo, DIY database $299/mo for any 3 states, All-Access $499/mo for every live state, DFY annual prepaid $8,000/year).
+
+OwnerFlight books calls with home care agency owners for businesses that sell into home care — done-for-you outreach backed by a scored database of 2,716 licensed agencies across 22 live states (Pilot Flight $400 one-time, DFY $800/mo, DIY database $299/mo for any 3 states, All-Access $499/mo for every live state, DFY annual prepaid $8,000/year).
+
 
 ## Main pages
-- [Real data preview](https://santi856.github.io/homecare-intel/sample.html): 25 actual business rows (agency, city, state, tier) from the public four-field map. Zero current HOT-tier records.
-- [HomeCare Intel](https://santi856.github.io/homecare-intel/): done-for-you outreach + the home care agency database
-- [Home care agency leads](https://santi856.github.io/homecare-intel/home-care-agency-leads.html): the database for teams that run their own outreach
-- [Signals weekly research](https://santi856.github.io/homecare-intel/signals.html): $199/month research brief for businesses selling into home care
-- [Agency growth inquiries](https://santi856.github.io/homecare-intel/agency-growth.html): separate inquiry for agencies seeking private-pay clients; not the vendor database
-- [After purchase](https://santi856.github.io/homecare-intel/onboarding.html): manual order verification and onboarding
-- [Florida statewide data brief](https://santi856.github.io/homecare-intel/brief.html): market brief on Florida's licensed home care agencies
-- [Partner with HomeCare Intel](https://santi856.github.io/homecare-intel/partners.html): partner program for businesses with a home care audience
-- [HomeCare Intel vs Apollo and ZoomInfo](https://santi856.github.io/homecare-intel/vs.html): side-by-side comparison for home care prospecting
+- [Real data preview](https://santi856.github.io/ownerflight/sample.html): 25 actual business rows (agency, city, state, tier) from the public four-field map. Zero current HOT-tier records.
+- [OwnerFlight](https://santi856.github.io/ownerflight/): done-for-you outreach + the home care agency database
+- [Home care agency leads](https://santi856.github.io/ownerflight/home-care-agency-leads.html): the database for teams that run their own outreach
+- [Signals weekly research](https://santi856.github.io/ownerflight/signals.html): $199/month research brief for businesses selling into home care
+- [Agency growth inquiries](https://santi856.github.io/ownerflight/agency-growth.html): separate inquiry for agencies seeking private-pay clients; not the vendor database
+- [After purchase](https://santi856.github.io/ownerflight/onboarding.html): manual order verification and onboarding
+- [Florida statewide data brief](https://santi856.github.io/ownerflight/brief.html): market brief on Florida's licensed home care agencies
+- [Partner with OwnerFlight](https://santi856.github.io/ownerflight/partners.html): partner program for businesses with a home care audience
+- [OwnerFlight vs Apollo and ZoomInfo](https://santi856.github.io/ownerflight/vs.html): side-by-side comparison for home care prospecting
+
 
 ## State databases
-- [Florida home care agency database](https://santi856.github.io/homecare-intel/homecare-intel-florida.html)
-- [Texas home care agency database](https://santi856.github.io/homecare-intel/texas.html)
-- [California home care agency database](https://santi856.github.io/homecare-intel/california.html)
-- [New York home care agency database](https://santi856.github.io/homecare-intel/new-york.html)
-- [Pennsylvania home care agency database](https://santi856.github.io/homecare-intel/pennsylvania.html)
-- [Ohio home care agency database](https://santi856.github.io/homecare-intel/ohio.html)
-- [Washington home care agency database](https://santi856.github.io/homecare-intel/washington.html)
-- [Illinois home care agency database](https://santi856.github.io/homecare-intel/illinois.html)
-- [Arizona home care agency database](https://santi856.github.io/homecare-intel/arizona.html)
-- [North Carolina home care agency database](https://santi856.github.io/homecare-intel/north-carolina.html)
-- [Georgia home care agency database](https://santi856.github.io/homecare-intel/georgia.html)
-- [Massachusetts home care agency database](https://santi856.github.io/homecare-intel/massachusetts.html)
-- [Virginia home care agency database](https://santi856.github.io/homecare-intel/virginia.html)
-- [New Jersey home care agency database](https://santi856.github.io/homecare-intel/new-jersey.html)
-- [Michigan home care agency database](https://santi856.github.io/homecare-intel/michigan.html)
-- [Tennessee home care agency database](https://santi856.github.io/homecare-intel/tennessee.html)
-- [Missouri home care agency database](https://santi856.github.io/homecare-intel/missouri.html)
-- [Maryland home care agency database](https://santi856.github.io/homecare-intel/maryland.html)
-- [Wisconsin home care agency database](https://santi856.github.io/homecare-intel/wisconsin.html)
-- [Minnesota home care agency database](https://santi856.github.io/homecare-intel/minnesota.html)
-- [Colorado home care agency database](https://santi856.github.io/homecare-intel/colorado.html)
+- [Florida home care agency database](https://santi856.github.io/ownerflight/ownerflight-florida.html)
+- [Texas home care agency database](https://santi856.github.io/ownerflight/texas.html)
+- [California home care agency database](https://santi856.github.io/ownerflight/california.html)
+- [New York home care agency database](https://santi856.github.io/ownerflight/new-york.html)
+- [Pennsylvania home care agency database](https://santi856.github.io/ownerflight/pennsylvania.html)
+- [Ohio home care agency database](https://santi856.github.io/ownerflight/ohio.html)
+- [Washington home care agency database](https://santi856.github.io/ownerflight/washington.html)
+- [Illinois home care agency database](https://santi856.github.io/ownerflight/illinois.html)
+- [Arizona home care agency database](https://santi856.github.io/ownerflight/arizona.html)
+- [North Carolina home care agency database](https://santi856.github.io/ownerflight/north-carolina.html)
+- [Georgia home care agency database](https://santi856.github.io/ownerflight/georgia.html)
+- [Massachusetts home care agency database](https://santi856.github.io/ownerflight/massachusetts.html)
+- [Virginia home care agency database](https://santi856.github.io/ownerflight/virginia.html)
+- [New Jersey home care agency database](https://santi856.github.io/ownerflight/new-jersey.html)
+- [Michigan home care agency database](https://santi856.github.io/ownerflight/michigan.html)
+- [Tennessee home care agency database](https://santi856.github.io/ownerflight/tennessee.html)
+- [Missouri home care agency database](https://santi856.github.io/ownerflight/missouri.html)
+- [Maryland home care agency database](https://santi856.github.io/ownerflight/maryland.html)
+- [Wisconsin home care agency database](https://santi856.github.io/ownerflight/wisconsin.html)
+- [Minnesota home care agency database](https://santi856.github.io/ownerflight/minnesota.html)
+- [Colorado home care agency database](https://santi856.github.io/ownerflight/colorado.html)
+
 
 ## Legal
-- [Terms](https://santi856.github.io/homecare-intel/terms.html)
-- [Privacy](https://santi856.github.io/homecare-intel/privacy.html)
+- [Terms](https://santi856.github.io/ownerflight/terms.html)
+- [Privacy](https://santi856.github.io/ownerflight/privacy.html)
